@@ -2,12 +2,11 @@ module github.com/JohnnyVim/renovate-yaml-repro
 
 go 1.18
 
-require gopkg.in/yaml.v2 v2.4.0
-
 require (
 	github.com/onsi/ginkgo/v2 v2.9.4
 	github.com/onsi/gomega v1.27.6
 	golang.org/x/text v0.9.0
+	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (

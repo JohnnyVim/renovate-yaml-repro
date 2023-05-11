@@ -1,4 +1,4 @@
-package main
+package main_test
 
 import (
 	"github.com/onsi/ginkgo/v2"
@@ -6,5 +6,7 @@ import (
 )
 
 var _ = ginkgo.Describe("Test", func() {
-	gomega.Expect(1).To(gomega.Equal(1))
+	ginkgo.It("should succeed", func() {
+		gomega.Expect(1).To(gomega.Equal(1))
+	})
 })

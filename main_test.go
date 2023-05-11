@@ -1,9 +1,11 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestSomething(t *testing.T) {
-	if 1 == 2 {
-		t.Fatal("this cannot happen")
-	}
+	assert.Equal(t, 1, 1)
 }

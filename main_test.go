@@ -1,11 +1,10 @@
 package main
 
 import (
-	"testing"
-
-	"github.com/stretchr/testify/assert"
+	"github.com/onsi/ginkgo/v2"
+	"github.com/onsi/gomega"
 )
 
-func TestSomething(t *testing.T) {
-	assert.Equal(t, 1, 1)
-}
+var _ = ginkgo.Describe("Test", func() {
+	gomega.Expect(1).To(gomega.Equal(1))
+})
